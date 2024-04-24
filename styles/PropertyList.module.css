@@ -1,0 +1,41 @@
+/* components/PropertyList.module.css */
+
+.propertyList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .property {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .property img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .property h3 {
+    margin-top: 10px;
+  }
+  
+  .property p {
+    margin: 10px 0;
+  }
+  
+  .property button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .property button:hover {
+    background-color: #0056b3;
+  }
+  
