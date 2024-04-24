@@ -5,7 +5,7 @@ import PropertyList from '../components/PropertyList';
 import Filter from '../components/Filter';
 import styles from '../styles/Properties.module.css';
 import BookingManagement from '../components/BookingManagement';
-
+import Navigation from '../components/Navigation';
 
 const propertiesData = [
   {
@@ -93,6 +93,7 @@ const PropertiesPage = () => {
   return (
     <div className={styles.container}>
       <h1>Property Listings</h1>
+      <Navigation />
       <Filter onFilter={filterProperties} />
       <PropertyList properties={filteredProperties} addToCart={addToCart} onBookNow={handleBookNow} removeFromCart={removeFromCart} />
       <BookingManagement cart={cart} removeFromCart={removeFromCart} />
